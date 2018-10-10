@@ -1,18 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
 body {
+  height: 1500px;
+}
+.navbar-toggle {
+  background-color: blue;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.nav>li a {
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+
+}
+
+.jumbotron {
   background-image: url('../image/banner-image1.jpg');
   background-size:cover;
+  background-position: center;
+  height: 650px;
+}
 
-  /* Workaround for some mobile browsers */
-min-height:100%;
-padding-top: 20px;
-padding-bottom: 20px;
+.jumbotron h1 {
+  line-height: 500px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 122px;
+  color: #EAECE6;
+}
+
+.about-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+  font-size: 55px;
+  margin-top: 65px;
+}
+.about-text {
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.gallery {
+  margin-top: 5%;
+  height: 500px;
+  background-color: #f2f3f4;
+  position: relative;
+}
+
+.absolute1 {
+  position: absolute;
+}
+
+.absolute2 {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+}
+
+.absolute3 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+
+.absolute4 {
+  position: absolute;
+  left: 60%;
+  top: 0%;
+}
+
+@media only screen and (max-width: 800px) {
+  .jumbotron h1 {
+    font=weight: 500px;
+    font-size: 50px;
+    line-height: 250px;
   }
 
+  .jumbotron {
+    height: 350px;
+  }
 
-.logo {
-  margin-left: 10px;
-  margin-top: 2px;
-}
-.nav_item {
-margin-top: 30px;
+  .about-text {
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+  }
+
+   .about-header {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      margin-top: 0px;
+    }
+
+  .absolute1 , .absolute2 , .absolute3 , .absolute4 {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+  }
+  .absolute2 {
+    top: 103%;
+  }
+
+  .absolute3 {
+    top: 152%;
+  }
+
+  .absolute4 {
+    top: 201%;
+  }
 }
