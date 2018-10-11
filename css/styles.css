@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Montserrat');
 
-.container-fluid {
-  padding: 0px;
-}
+/* Navbar */
 .navbar-toggle {
   background-color: #4b9df4;
 }
@@ -15,10 +13,10 @@
   margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-
 }
 
-.jumbotron {
+/* Jumbotron/banner */
+.jumbotron-1 {
   background-image: url('../image/banner-image1.jpg');
   background-size:cover;
   background-position: center;
@@ -27,13 +25,14 @@
   align-items: center;
 }
 
-.jumbotron h1 {
+.jumbotron-1 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 1000;
   font-size: 122px;
   color: #EAECE6;
 }
 
+/* About columns */
 .about-header {
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 550;
@@ -41,46 +40,45 @@
   color: #124f8c;
   margin-top: 65px;
 }
+
 .about-text {
-  vertical-align: middle;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 25px;
-
   margin-top: 20px;
 }
 
 /* Gallery */
 .gallery-header {
-    text-align: center;
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 55px;
-    color: #124f8c;
-    padding-top: 30px;
+  text-align: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 55px;
+  color: #124f8c;
+  padding-top: 30px;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .column {
-    flex: 27%;
-    max-width: 27%;
-    padding: 0 4px;
+  flex: 27%;
+  max-width: 27%;
+  padding: 0 4px;
 }
 
 .column2 {
-    flex: 31%;
-    max-width: 31%;
-    padding: 0 4px;
+  flex: 31%;
+  max-width: 31%;
+  padding: 0 4px;
 }
 
 .column3 {
-    flex: 40%;
-    max-width: 40%;
-    padding: 0 4px;
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
 }
 
 .gal-img1 {
@@ -91,6 +89,7 @@
   margin-top: 6%;
 }
 
+/* Footer */
 footer {
   padding: 0px;
   margin-top: 5%;
@@ -99,7 +98,7 @@ footer {
 }
 
 .f-logo {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .info, .social {
@@ -111,48 +110,64 @@ footer {
 .info {
   margin-left: 2%;
 }
+
 .fab {
   margin-left: 5%;
 }
 
+.giphy-embed {
+  margin-left: 29%;
+}
+
+/* MEDIA QUERY */
 
 @media only screen and (max-width: 800px) {
-  .jumbotron h1 {
-    font=weight: 500px;
-    font-size: 50px;
-  }
 
   .jumbotron {
     height: 350px;
   }
 
+  .jumbotron h1 {
+    font=weight: 500px;
+    font-size: 50px;
+  }
+
+  .about-header {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
   .about-text {
-    vertical-align: middle;
     font-size: 12px;
   }
 
-   .about-header {
-      font-weight: 300;
-      font-size: 16px;
-      margin-top: 0px;
-    }
-
   .column, .column2, .column3 {
-        flex: 100%;
-        max-width: 100%;
-    }
+    flex: 100%;
+    max-width: 100%;
+  }
 
-    .column2, .column3, .gal-img, .gal-img1 {
-      margin-top: 1%;
-    }
+  .column2, .column3, .gal-img, .gal-img1 {
+    margin-top: 1%;
+  }
 
-    .fab {
-      margin-left: 0px;
-      margin-top: 30%;
-    }
+  footer {
+    margin-bottom: 0px;
+  }
 
-    .info {
-      margin-top: 10%;
-    }
+  .fab {
+    margin-left: 0px;
+    margin-top: 30%;
+  }
+
+  .info {
+    margin-top: 10%;
+  }
+
+  .giphy-embed {
+    width: 250px;
+    height: 250px;
+  }
+
 
 }
