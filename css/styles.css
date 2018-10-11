@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Montserrat');
 
-body {
-  height: 1500px;
+.container-fluid {
+  padding: 0px;
 }
 .navbar-toggle {
-  background-color: blue;
+  background-color: #4b9df4;
 }
 
 .navbar {
@@ -23,10 +23,11 @@ body {
   background-size:cover;
   background-position: center;
   height: 650px;
+  display: flex;
+  align-items: center;
 }
 
 .jumbotron h1 {
-  line-height: 500px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 1000;
   font-size: 122px;
@@ -34,53 +35,91 @@ body {
 }
 
 .about-header {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 550;
-  font-size: 55px;
+  font-size: 50px;
+  color: #124f8c;
   margin-top: 65px;
 }
 .about-text {
   vertical-align: middle;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 25px;
+
   margin-top: 20px;
 }
 
-.gallery {
+/* Gallery */
+.gallery-header {
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 55px;
+    color: #124f8c;
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 27%;
+    max-width: 27%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 31%;
+    max-width: 31%;
+    padding: 0 4px;
+}
+
+.column3 {
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+
+.gal-img1 {
+  margin-top: 3%;
+}
+
+.gal-img {
+  margin-top: 6%;
+}
+
+footer {
+  padding: 0px;
   margin-top: 5%;
-  height: 500px;
-  background-color: #f2f3f4;
-  position: relative;
+  height: 150px;
+  background-color: #eaedef;
 }
 
-.absolute1 {
-  position: absolute;
+.f-logo {
+    margin-top: 2%;
 }
 
-.absolute2 {
-  position: absolute;
-  left: 25%;
-  top: 0%;
+.info, .social {
+  margin-top: 4%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 }
 
-.absolute3 {
-  position: absolute;
-  left: 25%;
-  top: 50%;
+.info {
+  margin-left: 2%;
+}
+.fab {
+  margin-left: 5%;
 }
 
-.absolute4 {
-  position: absolute;
-  left: 60%;
-  top: 0%;
-}
 
 @media only screen and (max-width: 800px) {
   .jumbotron h1 {
     font=weight: 500px;
     font-size: 50px;
-    line-height: 250px;
   }
 
   .jumbotron {
@@ -89,31 +128,31 @@ body {
 
   .about-text {
     vertical-align: middle;
-    font-family: 'Raleway', sans-serif;
     font-size: 12px;
   }
 
    .about-header {
-      font-family: 'Raleway', sans-serif;
       font-weight: 300;
       font-size: 16px;
       margin-top: 0px;
     }
 
-  .absolute1 , .absolute2 , .absolute3 , .absolute4 {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-  }
-  .absolute2 {
-    top: 103%;
-  }
+  .column, .column2, .column3 {
+        flex: 100%;
+        max-width: 100%;
+    }
 
-  .absolute3 {
-    top: 152%;
-  }
+    .column2, .column3, .gal-img, .gal-img1 {
+      margin-top: 1%;
+    }
 
-  .absolute4 {
-    top: 201%;
-  }
+    .fab {
+      margin-left: 0px;
+      margin-top: 30%;
+    }
+
+    .info {
+      margin-top: 10%;
+    }
+
 }
